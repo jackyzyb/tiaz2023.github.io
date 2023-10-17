@@ -201,8 +201,8 @@
       list-style-type: circle; /* Remove default list styles */
     }
     .sidebar {
-        /* float: right; */
-        /* position: sticky; */
+        float: right; 
+        position: sticky;
         top: 0; /* Stick to the top of the viewport */
         margin: 20px; /* Adjust the margin as needed */
         font-size: 24px; /* Increase icon size */
@@ -218,6 +218,14 @@
       display: block;
       padding: 10px;
     } 
+
+    @media screen and (max-width: 1500px) {
+    .sidebar {
+        display: none; /* This hides the sidebar */
+    }
+    /* You can add more adjustments for other elements on narrow screens here */
+}
+
     .content {
         flex-grow: 1;
         padding: 20px; /* Add padding to separate content from sidebar */
