@@ -45,7 +45,10 @@
             transition: all 0.3s; /* Smooth transition for size change */
             border-radius: 5px; /* Rounded corners */
             font-size: 25px; /* Set the font size to 16 pixels */
-        }
+        } 
+
+
+        
 
         /* Style for the link when hovered */
         .toolbar a:hover {
@@ -78,8 +81,28 @@
 
         nav ul li {
             display: inline;
-            margin: 0 80px; /* Adjust margin between navigation links */
+            margin: 0 160px; /* Adjust margin between navigation links */
         }
+
+        /* Adjust styles as the screen gets narrower */
+        @media screen and (max-width: 1200px) {
+            nav ul li {
+                margin: 0 80px; /* Medium margin for medium screens */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                margin: 0 40px; /* Small margin for small screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            nav ul li {
+                margin: 0 20px; /* Smaller margin for mobile screens */
+            }
+        }
+
 
         nav ul li a {
             text-decoration: none;
